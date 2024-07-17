@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c334f383859309b147a8b7cd5ec18657",
+    "content-hash": "6691063eed7f1b3a9f6b44e403f71342",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1403,38 +1403,36 @@
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.7.2",
+            "version": "v2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5"
+                "reference": "502e0fe3f0415d06d5db1f83a472f0f3b754bafe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
+                "reference": "502e0fe3f0415d06d5db1f83a472f0f3b754bafe",
                 "shasum": ""
             },
             "require": {
-                "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
-                "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
+                "illuminate/console": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
+                "illuminate/support": "^6.0|^7.0|^8.0|^9.0|^10.0|^11.0",
                 "php": "^7.2.5|^8.0",
-                "psy/psysh": "^0.10.4|^0.11.1",
-                "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
+                "psy/psysh": "^0.11.1|^0.12.0",
+                "symfony/var-dumper": "^4.3.4|^5.0|^6.0|^7.0"
             },
             "require-dev": {
                 "mockery/mockery": "~1.3.3|^1.4.2",
+                "phpstan/phpstan": "^1.10",
                 "phpunit/phpunit": "^8.5.8|^9.3.3"
             },
             "suggest": {
-                "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0)."
+                "illuminate/database": "The Illuminate Database package (^6.0|^7.0|^8.0|^9.0|^10.0|^11.0)."
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-master": "2.x-dev"
-                },
                 "laravel": {
                     "providers": [
                         "Laravel\\Tinker\\TinkerServiceProvider"
@@ -1465,9 +1463,9 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/tinker/issues",
-                "source": "https://github.com/laravel/tinker/tree/v2.7.2"
+                "source": "https://github.com/laravel/tinker/tree/v2.9.0"
             },
-            "time": "2022-03-23T12:38:24+00:00"
+            "time": "2024-01-04T16:10:04+00:00"
         },
         {
             "name": "league/commonmark",
@@ -8015,5 +8013,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.6.0"
 }
