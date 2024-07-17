@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\TaskResource;
 use App\Models\Tasks;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Gate;
 
 class TaskController extends Controller
 {
@@ -14,6 +15,9 @@ class TaskController extends Controller
     public function viewAll()
     {
         $query = Tasks::all();
+
+        // We would check here if user can view tasks
+        // Gate::authorize('viewAny', Tasks::class);
 
         return TaskResource::collection($query);
     }
@@ -43,9 +47,15 @@ class TaskController extends Controller
      */
     public function delete(Request $request)
     {
+        $request->validate([
+            'id' => 'required',
+        ]);
+
         $id = $request->input('id');
 
         $task = Tasks::find($id);
+        // We would check here if user can delete tasks
+        // Gate::authorize('delete', $task);
 
         $task->delete();
 
@@ -59,9 +69,16 @@ class TaskController extends Controller
      */
     public function update(Request $request)
     {
+        $request->validate([
+            'id' => 'required',
+        ]);
+
         $id = $request->input('id');
 
         $task = Tasks::find($id);
+
+        // We would check here if user can update tasks
+//        Gate::authorize('update', $task);
 
         $task->status = 'completed';
 
